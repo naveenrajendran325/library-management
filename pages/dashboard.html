@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Digital Library</title>
+  <link rel="stylesheet" href="../css/common.css"><link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body data-title="Dashboard">
+  <div class="data-app" data-app>
+    <div data-page-content>
+      <div class="stats-grid" id="dashboardStats"></div>
+      <div class="dashboard-grid">
+        <section class="card"><div class="card-header"><h2>Recent Book Issues</h2><a class="btn btn-secondary" href="issue-book.html">View all</a></div><div class="table-wrap" id="recentIssues"></div></section>
+        <section class="overview-card"><img src="../assets/images/dashboard-library.jpg" alt="University library"><div><p>Library Overview</p><h2>Connected academic resources</h2><a class="btn btn-primary" href="books.html">Manage collection</a></div></section>
+      </div>
+      <section class="card recent-members"><div class="card-header"><h2>Recent Member Registrations</h2><a class="btn btn-secondary" href="members.html">View all</a></div><div class="table-wrap" id="recentMembers"></div></section>
+    </div>
+  </div>
+  <script src="../js/storage.js"></script><script src="../js/common.js"></script><script src="../js/dashboard.js"></script>
+</body>
+</html>

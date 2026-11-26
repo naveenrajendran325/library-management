@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Digital Library</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/register.css">
+</head>
+<body class="auth-page">
+  <main class="auth-layout">
+    <section class="auth-image register-image">
+      <a class="auth-brand" href="../index.html"><span>▣</span> Digital Library</a>
+      <p>Join the academic<br>community.</p>
+    </section>
+    <section class="auth-panel">
+      <form class="auth-card register-card" id="registerForm">
+        <p class="eyebrow">Create account</p>
+        <h1>Administrator registration</h1>
+        <div class="form-grid">
+          <div class="form-group"><label for="fullName">Full Name</label><input class="form-control" id="fullName" name="fullName"></div>
+          <div class="form-group"><label for="regUsername">Username</label><input class="form-control" id="regUsername" name="username"></div>
+          <div class="form-group"><label for="email">Email</label><input class="form-control" id="email" name="email" type="email"></div>
+          <div class="form-group"><label for="mobile">Mobile Number</label><input class="form-control" id="mobile" name="mobile" inputmode="numeric"></div>
+          <div class="form-group"><label for="regPassword">Password</label><input class="form-control" id="regPassword" name="password" type="password"></div>
+          <div class="form-group"><label for="confirmPassword">Confirm Password</label><input class="form-control" id="confirmPassword" name="confirmPassword" type="password"></div>
+        </div>
+        <p class="message error" id="registerError"></p>
+        <p class="message success" id="registerSuccess"></p>
+        <button class="btn btn-primary register-submit" type="submit">Register</button>
+        <p class="auth-switch">Already registered? <a href="login.html">Sign in</a></p>
+      </form>
+    </section>
+  </main>
+  <script src="../js/storage.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+</html>

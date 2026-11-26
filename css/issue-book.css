@@ -1,0 +1,5 @@
+.issue-layout { display: grid; grid-template-columns: 1fr 280px; gap: 22px; margin-bottom: 22px; }
+.issue-image { min-height: 380px; border-radius: 14px; overflow: hidden; }
+.issue-image img { width: 100%; height: 100%; object-fit: cover; }
+.issued-section { margin-bottom: 20px; }
+@media (max-width: 900px) { .issue-layout { grid-template-columns: 1fr; } .issue-image { display: none; } }

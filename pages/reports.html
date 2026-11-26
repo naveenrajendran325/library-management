@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Reports | Digital Library</title><link rel="stylesheet" href="../css/common.css"><link rel="stylesheet" href="../css/reports.css"></head>
+<body data-title="Library Reports">
+  <div class="data-app" data-app><div data-page-content>
+    <div class="report-actions"><div class="toolbar" style="margin:0"><select id="reportType" class="form-control" style="width:auto"><option value="all">All Records</option><option value="books">Books</option><option value="members">Members</option><option value="issued">Issued Records</option><option value="returned">Returned Records</option></select><input id="reportSearch" class="form-control" placeholder="Search report records"></div><div class="action-row"><button id="exportCsv" class="btn btn-secondary" type="button">Export CSV</button><button id="printReport" class="btn btn-primary" type="button">Print Report</button></div></div>
+    <div class="stats-grid" id="reportStats"></div>
+    <section class="card"><div class="card-header"><h2 id="reportTitle">All Library Records</h2></div><div class="card-body table-wrap" id="reportTable"></div></section>
+  </div></div>
+  <script src="../js/storage.js"></script><script src="../js/common.js"></script><script src="../js/reports.js"></script>
+</body>
+</html>

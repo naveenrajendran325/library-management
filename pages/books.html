@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Books | Digital Library</title><link rel="stylesheet" href="../css/common.css"><link rel="stylesheet" href="../css/books.css"></head>
+<body data-title="Book Management">
+  <div class="data-app" data-app><div data-page-content>
+    <section class="card">
+      <div class="card-header"><h2>Library Books</h2><a class="btn btn-primary" href="add-book.html">＋ Add Book</a></div>
+      <div class="card-body">
+        <div class="toolbar">
+          <div class="search-wrap"><input id="bookSearch" class="form-control" placeholder="Search by name, author, or category"></div>
+          <select id="categoryFilter" class="form-control" style="width:auto"><option value="">All Categories</option></select>
+          <button id="clearBookSearch" class="btn btn-outline" type="button">Clear</button>
+        </div>
+        <div class="table-wrap" id="booksTable"></div>
+      </div>
+    </section>
+  </div></div>
+  <script src="../js/storage.js"></script><script src="../js/common.js"></script><script src="../js/books.js"></script>
+</body>
+</html>

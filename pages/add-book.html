@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Add Book | Digital Library</title><link rel="stylesheet" href="../css/common.css"><link rel="stylesheet" href="../css/add-book.css"></head>
+<body data-title="Add / Edit Book">
+  <div class="data-app" data-app><div data-page-content>
+    <section class="card form-card">
+      <div class="card-header"><h2 id="bookFormTitle">Add New Book</h2><a class="btn btn-outline" href="books.html">← Back</a></div>
+      <div class="card-body">
+        <form id="bookForm">
+          <div class="form-grid">
+            <div class="form-group"><label for="bookId">Book ID *</label><input id="bookId" name="bookId" class="form-control"></div>
+            <div class="form-group"><label for="bookName">Book Name *</label><input id="bookName" name="bookName" class="form-control"></div>
+            <div class="form-group"><label for="author">Author *</label><input id="author" name="author" class="form-control"></div>
+            <div class="form-group"><label for="category">Category *</label><input id="category" name="category" class="form-control" list="categoryOptions"><datalist id="categoryOptions"><option>Computer Science</option><option>Management</option><option>Science</option><option>Literature</option><option>History</option></datalist></div>
+            <div class="form-group"><label for="publisher">Publisher *</label><input id="publisher" name="publisher" class="form-control"></div>
+            <div class="form-group"><label for="publicationYear">Publication Year *</label><input id="publicationYear" name="publicationYear" class="form-control" type="number" min="1000" max="2099"></div>
+            <div class="form-group"><label for="quantity">Quantity *</label><input id="quantity" name="quantity" class="form-control" type="number" min="1"></div>
+          </div>
+          <p class="message" id="bookMessage"></p>
+          <div class="form-actions"><button class="btn btn-primary" type="submit" id="saveBook">Save Book</button><button class="btn btn-outline" type="reset">Reset</button></div>
+        </form>
+      </div>
+    </section>
+  </div></div>
+  <script src="../js/storage.js"></script><script src="../js/common.js"></script><script src="../js/add-book.js"></script>
+</body>
+</html>

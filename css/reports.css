@@ -1,0 +1,9 @@
+.report-actions { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 20px; }
+.action-row { display: flex; gap: 8px; }
+.stats-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 22px; }
+.report-stat { background: #fff; border: 1px solid #edf2f7; border-radius: 12px; padding: 16px; box-shadow: var(--shadow); }
+.report-stat span { color: var(--muted); font-size: 12px; font-weight: 800; }
+.report-stat strong { display: block; margin-top: 8px; font-size: 25px; color: var(--navy); }
+@media (max-width: 1000px) { .stats-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 650px) { .report-actions { align-items: stretch; flex-direction: column; } .action-row { justify-content: flex-end; } .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+@media print { .sidebar, .topbar, .report-actions { display: none; } .data-app { display:block; } .main-shell { margin:0; } .page-content { padding:0; } }
